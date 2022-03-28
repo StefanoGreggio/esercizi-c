@@ -1,15 +1,13 @@
 #include <stdio.h>
-int main(){
-    int a=9;
-    int b=3;
+int main()
+{
+    int voto;
     int risultato;
-    risultato=a & b;
-    printf("%d\n",&risultato);
-
-    risultato= a | b;
-    printf("%d\n",&risultato);
-
-    risultato=a^b;
-    printf("%d\n",&risultato);
+    scanf("%d", voto);
+    risultato=((voto>=0)?(1):(0));
+    if(risultato=1)
+    printf("voto positivo");
+    else
+    printf("voto negativo");
     return 0;
 }
